@@ -48,23 +48,4 @@ uvicorn app.main:app --reload
 
 Всего в API 20 эндпоинтов, поэтому требования по CRUD и связанным сущностям закрыты.
 
-## Проверка
 
-```bash
-pytest
-pylint app > pylint.txt
-```
-
-Текущий результат: тесты проходят, покрытие выше 70%, pylint сохранен в `pylint.txt`.
-
-## Что показать в видео
-
-1. Сказать: “Это API для клуба настольных игр”.
-2. В Swagger показать регистрацию, логин и кнопку `Authorize`.
-3. Добавить игру и вызвать подбор `GET /analytics/recommendations`.
-4. Показать код функции `recommend_games` в `app/main.py`.
-5. Показать `pytest` и `pylint.txt`.
-
-## Автор
-
-Учебный проект по FastAPI.
